@@ -1,4 +1,5 @@
 # Libraries
+pip install  aversine
 from haversine import haversine
 #Biblioteca plotly para desenhar o grafico
 import plotly.express as px
