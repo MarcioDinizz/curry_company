@@ -17,7 +17,7 @@ st.set_page_config( page_title='Visão Empresa', layout = 'wide')
 # Funções
 #----------------------------------------------------------------------------------
 def country_maps(df1):  
-        df_aux = df1.loc[:,                                                                                                         ['City','Road_traffic_density','Delivery_location_latitude','Delivery_location_longitude']].groupby(['City','Road_traffic_density'] ).median().reset_index()
+        df_aux = df1.loc[:,['City','Road_traffic_density','Delivery_location_latitude','Delivery_location_longitude']].groupby(['City','Road_traffic_density'] ).median().reset_index()
         #df_aux = df_aux.loc[df_aux['City'] != 'NaN', :]
         #df_aux = df_aux.loc[df_aux['Road_traffic_density'] != 'NaN', :]
 
